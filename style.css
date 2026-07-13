@@ -94,3 +94,14 @@ img  {
 
 }
 /* banner end */
+/* speaker */
+.speaker {
+    background: #f3ecfe;
+    padding:60px 20px;
+    text-align: center;
+}
+.speaker h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+
+}
