@@ -141,12 +141,7 @@ img  {
   color: #777;}
   /* grid end */
 
-.pricing h5 {
-  font-size: 32px;
-  margin: 10px 0 40px;
-}
-
-
+/* spot */
 
 .main h2{
     text-align: center;
@@ -164,3 +159,97 @@ border:none;
 font-size: 15px;
 border:none;
 }
+/* spot */
+/* pricing */
+.pricing {
+  background: #f3ecfe;
+  padding: 60px 20px 90px;
+}
+
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 950px;
+  max-height: 200px;
+  margin:  auto;
+}
+.price-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
+  display: flex;
+  flex-direction: column;
+}
+.price-card-fd {
+  background: #101a2c;
+  color: #fff;
+  
+  padding: 40px 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.price-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.price-card ul {
+  margin: 20px 0;
+  flex-direction: column;
+  text-align: left;
+  
+}
+
+.price-card ul li {
+  font-size: 13px;
+  padding: 6px 0;
+  color: #555;
+text-align: left;
+}
+.price-card-fd ul {
+  margin: 20px 0;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+
+.price-card-fd ul li {
+      font-size: 13px;
+  padding: 6px 0;
+  color: #ccc; 
+  flex-direction: column;
+  text-align: left;
+}
+.price-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+.price-card-fd button {
+    width: 100%;
+padding: 12px;
+border-radius: 6px;
+border: none;
+font-weight: 600;
+cursor: pointer;
+margin-top: 10px;
+  background: #2952e3;
+  color: #fff;
+}
+.price-card-fd h3 {
+  font-size: 28px;
+  margin-bottom: 15
+  text-align: left;}
+  /* pricing */
