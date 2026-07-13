@@ -257,6 +257,121 @@ margin-top: 10px;
   text-align: left;
 }
   /* pricing */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* মূল পোর্টফোলিও সেকশন */
+.portfolio-section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* সেকশন টাইটেল ডিজাইন */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+/* কার্ডগুলোকে পাশাপাশি রাখার জন্য Flexbox */
+.portfolio-container {
+    display: flex;
+    gap: 30px; /* দুটি কার্ডের মাঝখানের ফাঁকা জায়গা */
+    justify-content: center;
+}
+
+/* পোর্টফোলিও কার্ডের ডিজাইন */
+.portfolio-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; /* ইমেজের কোণা কার্ডের শেপের সাথে মিলিয়ে রাখার জন্য */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* হালকা শ্যাডো */
+    width: 50%; /* দুটি কার্ড অর্ধেক অর্ধেক জায়গা নেবে */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* কার্ডের ওপর মাউস নিলে একটু ওপরে উঠবে */
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ছবির ডিজাইন */
+.portfolio-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* ছবি যেন না ফাটে বা চ্যাপ্টা না হয় */
+    display: block;
+}
+
+/* কার্ডের ভেতরের লেখার অংশ */
+.portfolio-content {
+    padding: 30px;
+    text-align: left;
+}
+
+.portfolio-content h3 {
+    font-size: 22px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.portfolio-content p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* View Project বাটন ডিজাইন */
+.btn-view {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2563eb; /* নীল রঙ */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #1d4ed8; /* মাউস নিলে একটু গাঢ় নীল হবে */
+}
+
+/* =====================================
+   Mobile Responsive Design
+====================================== */
+/* স্ক্রিন ছোট (মোবাইল) হলে কার্ডগুলো নিচে নিচে চলে আসবে */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+    .portfolio-card {
+        width: 100%; /* মোবাইলে কার্ডগুলো পুরোপুরি ১০০% জায়গা নেবে */
+    }
+    /* end p */
+}
   /* footer */
   footer {
   background: #0c1424;
