@@ -106,6 +106,7 @@ img  {
 
 }
 /* speaker end */
+/* grid start */
 .speaker-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -138,3 +139,28 @@ img  {
 .speaker-info p {
   font-size: 13px;
   color: #777;}
+  /* grid end */
+
+.pricing h5 {
+  font-size: 32px;
+  margin: 10px 0 40px;
+}
+
+
+
+.main h2{
+    text-align: center;
+     transform: translate(0%, 0%);
+    padding:0px 20px;
+border-radius: 12px;
+font-size: 50px;
+border:none;
+ 
+}
+.subtitle h6{
+       text-align: center;
+     transform: translate(0%, 0%);
+
+font-size: 15px;
+border:none;
+}
