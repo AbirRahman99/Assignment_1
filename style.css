@@ -31,15 +31,16 @@ nav {
      justify-content: space-between;
      max-width: 1200px;
      margin: auto;
-     padding: 12px o;
-
+     padding: 20px o;
+    height: 80px;
+    align-items: center;
+    
 }
 ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     gap: 20px;
-    align-items: center;
 }
 ul li a {
     text-decoration: none;
@@ -146,16 +147,15 @@ img  {
 .main h2{
     text-align: center;
      transform: translate(0%, 0%);
-    padding:0px 20px;
+    padding: 40px 0px;
 border-radius: 12px;
 font-size: 50px;
 border:none;
- 
 }
 .subtitle h6{
        text-align: center;
      transform: translate(0%, 0%);
-
+     padding: 15px;
 font-size: 15px;
 border:none;
 }
@@ -175,17 +175,14 @@ border:none;
   max-width: 950px;
   max-height: 800px;
   margin:  auto;
-  li
-  
-}
+  }
 .price-card {
   background: #fff;
   border-radius: 10px;
   padding: 40px 20px;
   text-align: left;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
-  display: flex;
-  flex-direction: column;
+
 }
 .price-card-fd {
   background: #101a2c;
@@ -201,34 +198,34 @@ border:none;
   margin-bottom: 15px;
   text-align: left;
 }
-.price-card ul {
+.price-card-fd h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.price-card ul{
+  margin: 20px 0;
+  flex-direction: column;
+  text-align: left;
+}
+.price-card ul li {
+  font-size: 13px;
+  padding: 6px 0;
+  color: #555555;
+}
+.price-card-fd ul {
   margin: 20px 0;
   flex-direction: column;
   text-align: left;
   
 }
 
-.price-card ul li {
-  font-size: 13px;
-  padding: 6px 0;
-  color: #555;
-text-align: left;
-}
-.price-card-fd ul {
-  margin: 20px 0;
-  flex-direction: column;
-  text-align: left;
-
-}
-
-
 .price-card-fd ul li {
       font-size: 13px;
   padding: 6px 0;
-  color: #ccc; 
-  flex-direction: column;
-  text-align: left;
+  color: #cccccc; 
 }
+
 .price-card button {
   width: 100%;
   padding: 12px;
@@ -251,11 +248,7 @@ margin-top: 10px;
   background: #2952e3;
   color: #fff;
 }
-.price-card-fd h3 {
-  font-size: 28px;
-  margin-bottom: 15;
-  text-align: left;
-}
+
   /* pricing */
   * {
     margin: 0;
